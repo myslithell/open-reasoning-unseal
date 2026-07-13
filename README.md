@@ -1,15 +1,6 @@
 # Open Reasoning Unseal
 
-> **EN** / **RU**
-
-Inspired by [s-JoL/open-reasoning](https://github.com/s-JoL/open-reasoning).  
-This repo is a **local single-file UI** (`webui.html`) — not their closed backend.
-
----
-
-## English
-
-### Idea
+## Idea
 
 Claude often hides the long chain-of-thought. The API may return:
 
@@ -21,7 +12,7 @@ Open **`webui.html`**, chat via OpenRouter, then press **Show hidden reasoning**
 
 **How the “unseal” works:** the first response keeps full thinking inside `signature` and does not show it. The button sends that signature back in a second request; the API restores the private reasoning into the model’s context, and a follow-up prompt asks the model to write it out as text. Without a valid signature there is nothing sealed to recover — it is not just “think again.”
 
-### How to use
+## How to use
 
 1. Open **`webui.html`** in the browser (double-click).
 2. **Settings** → paste [OpenRouter](https://openrouter.ai/) API key → Save (browser `localStorage` only).
@@ -30,7 +21,7 @@ Open **`webui.html`**, chat via OpenRouter, then press **Show hidden reasoning**
 
 No install. No Node.js. No backend.
 
-### Principle
+## Principle
 
 ```
 Turn A: question → Claude → answer + sealed signature
@@ -39,9 +30,7 @@ Turn B: send signature back → UI shows recovered reasoning
 
 ---
 
-## Русский
-
-### Суть
+## Суть
 
 Claude часто прячет длинное reasoning. API может отдать:
 
@@ -53,7 +42,7 @@ Claude часто прячет длинное reasoning. API может отда
 
 **Как устроен unseal:** в первом ответе полное thinking спрятано в `signature` и тебе не показывается. Кнопка отправляет эту signature вторым запросом: API снова подставляет private reasoning в контекст модели, а follow-up prompt просит выдать его текстом. Без валидной signature «разпечатывать» нечего — это не просто «подумай ещё раз».
 
-### Как пользоваться
+## Как пользоваться
 
 1. Открой **`webui.html`** в браузере (двойной клик).
 2. **Настройки** → ключ [OpenRouter](https://openrouter.ai/) → Сохранить (только `localStorage`).
@@ -62,7 +51,7 @@ Claude часто прячет длинное reasoning. API может отда
 
 Без установки. Без Node.js. Без сервера.
 
-### Принцип
+## Принцип
 
 ```
 Ход A: вопрос → Claude → ответ + sealed signature
@@ -78,7 +67,10 @@ Claude часто прячет длинное reasoning. API может отда
 | [`webui.html`](./webui.html) | Full UI |
 | [`README.md`](./README.md) | EN + RU |
 
-## Credits
+## Credits / Inspiration
 
-- Framing: [s-JoL/open-reasoning](https://github.com/s-JoL/open-reasoning)
-- Local unseal UI: this repo
+Inspired by [s-JoL/open-reasoning](https://github.com/s-JoL/open-reasoning) (public demo framing).  
+This repo is a **local single-file UI** (`webui.html`) — not their closed recovery backend.
+
+Вдохновлено [s-JoL/open-reasoning](https://github.com/s-JoL/open-reasoning).  
+Здесь — **локальный single-file UI**, не их закрытый recovery-backend.
