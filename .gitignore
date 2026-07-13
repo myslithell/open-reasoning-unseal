@@ -1,0 +1,15 @@
+# secrets & env
+.env
+.env.*
+*.pem
+
+# local research noise
+experiments/results/
+**/__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# editor / OS copies
+*копия*
+*PC_HOME*
