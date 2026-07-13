@@ -67,10 +67,6 @@ Claude часто прячет длинное reasoning. API может отда
 | [`webui.html`](./webui.html) | Full UI |
 | [`README.md`](./README.md) | EN + RU |
 
-## Credits / Inspiration
+## Credits
 
-Inspired by [s-JoL/open-reasoning](https://github.com/s-JoL/open-reasoning) (public demo framing).  
-This repo is a **local single-file UI** (`webui.html`) — not their closed recovery backend.
-
-Вдохновлено [s-JoL/open-reasoning](https://github.com/s-JoL/open-reasoning).  
-Здесь — **локальный single-file UI**, не их закрытый recovery-backend.
+Inspired by [s-JoL/open-reasoning](https://github.com/s-JoL/open-reasoning); built this because their recovery is closed.
