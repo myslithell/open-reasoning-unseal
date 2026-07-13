@@ -166,6 +166,38 @@
     background: var(--ok);
     box-shadow: 0 0 0 3px rgba(52,211,153,.15);
   }
+  a.btn-tg {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 650;
+    font-size: 0.84rem;
+    padding: 8px 12px;
+    border-radius: 11px;
+    border: 1px solid rgba(42, 171, 238, 0.45);
+    background: linear-gradient(145deg, #2AABEE 0%, #229ED9 55%, #1a8bc4 100%);
+    box-shadow: 0 6px 18px rgba(34, 158, 217, 0.28);
+    transition: transform .12s, filter .15s, box-shadow .15s;
+    white-space: nowrap;
+  }
+  a.btn-tg:hover {
+    filter: brightness(1.06);
+    box-shadow: 0 8px 22px rgba(34, 158, 217, 0.38);
+  }
+  a.btn-tg:active { transform: translateY(1px); }
+  a.btn-tg svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    fill: currentColor;
+  }
+  a.btn-tg .tg-label { letter-spacing: -0.01em; }
+  @media (max-width: 720px) {
+    a.btn-tg .tg-label { display: none; }
+    a.btn-tg { padding: 0; width: 40px; height: 40px; justify-content: center; border-radius: 11px; }
+  }
 
   
   .settings {
@@ -555,6 +587,10 @@
         <button type="button" class="icon" id="btnSettings" title="Настройки">⚙</button>
         <button type="button" class="icon" id="reset" title="Новый чат">⟲</button>
         <span class="pill" id="keypill"><span class="dot"></span><span id="keylabel">нет ключа</span></span>
+        <a class="btn-tg" href="https://t.me/+gxt0pJ7jMxxhODZi" target="_blank" rel="noopener noreferrer" title="Telegram-канал">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.04 15.3l-.38 5.35c.54 0 .78-.23 1.06-.5l2.55-2.44 5.29 3.88c.97.53 1.66.25 1.92-.9l3.48-16.34h.01c.31-1.44-.52-2-1.46-1.65L1.35 9.7C-.05 10.24-.03 11.02 1.1 11.37l5.5 1.72L18.4 5.5c.62-.41 1.18-.18.72.23"/></svg>
+          <span class="tg-label">Telegram</span>
+        </a>
       </div>
     </div>
   </header>

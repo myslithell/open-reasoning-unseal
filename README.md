@@ -67,6 +67,12 @@ Claude часто прячет длинное reasoning. API может отда
 | [`webui.html`](./webui.html) | Full UI |
 | [`README.md`](./README.md) | EN + RU |
 
+## More from me
+
+Want more AI tools, edge tricks, and research-grade finds? Join the Telegram: [t.me channel](https://t.me/+gxt0pJ7jMxxhODZi)
+
+Если хочешь больше интересных штук про ИИ — заходи в [Telegram-канал](https://t.me/+gxt0pJ7jMxxhODZi).
+
 ## Credits
 
 Inspired by [s-JoL/open-reasoning](https://github.com/s-JoL/open-reasoning); built this because their recovery is closed.
