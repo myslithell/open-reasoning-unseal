@@ -1,5 +1,7 @@
 # Open Reasoning Unseal
 
+**Live:** [myslithell.github.io/open-reasoning-unseal](https://myslithell.github.io/open-reasoning-unseal/)
+
 ## Idea
 
 Claude often hides the long chain-of-thought. The API may return:
